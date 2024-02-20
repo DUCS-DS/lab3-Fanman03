@@ -3,20 +3,20 @@ import random
 
 def length(lst):
     """return the length of a finite linked list"""
-    curr,count=lst.head,0
-    while(curr):
+    node,count=lst.head,0
+    while(node):
         count+=1
-        curr=curr.next
+        node=node.next
     return count
     
 
 
 def llprint(lst):
     """print a finite linked list"""
-    curr=lst.head
-    while(curr):
-        print(curr.val,end=" ")
-        curr=curr.next
+    node=lst.head
+    while(node):
+        print(node.val,end=" ")
+        node=node.next
     print()
 
 
